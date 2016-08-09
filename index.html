@@ -9,28 +9,24 @@
 		<body>
 		<div id="hero">
 			<header class="main-header clearfix">
-				<div class="container">			
+				<div class="container clearfix">			
 					<h1 class="logo"><a href="#">Travel Italia</a></h1>
 					<ul class="main-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Places</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#sights">Sights</a></li>
+						<li><a href="#activities">Activities</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</div><!-- End Container -->		
+				</div><!-- End Container -->
 			</header><!-- End Main Header -->
-
-			<section class="wrap-caption">
-				<div class="sub-caption">
-					<div class="hero-text">		
-						<h1 class="headline">Travel Italia</h1>
-						<span class="tagline">The best scenery throughout Europe</span>
-					</div><!--End Hero Text -->
-				</div>
-			</section>	
+			
+			<div class="sub-caption">
+				<h1>Travel Italia</h1>
+				<h3>Travel, Relax & Enjoy</h3>
+			</div>
 		</div><!-- End Hero section -->		
 		
-		<section id="about">
+		<section id="sights">
 			<header>
 				<h1>Things To See...</h1>
 			</header>
@@ -92,7 +88,7 @@
 					<li>
 						<div class="blue-box-2 col">
 							<div class="activities-copy">
-								<h2>Rock Climing</h2>
+								<h2>Rock Climbing</h2>
 								<div class="horizontal-line"></div>
 								<p>For all the spider man enthusiasts, we have plenty of rocky surfaces to keep you entertained for weeks.</p>
 								<p>We offer the chance to either lead climb or work in a pair.</p>
@@ -106,7 +102,7 @@
 					<li>
 						<div class="blue-box-3 col">
 							<div class="activities-copy">
-								<h2>Canoing</h2>
+								<h2>Canoeing</h2>
 								<div class="horizontal-line"></div>
 								<p>If you want to just chill out, surrounded by the beauty of the mountains and the calm of the still lake water then look no further.</p>
 								<p>You have the choice to either paddle in and around the drop off location or we can paddle back to the hotel complex.</p>
@@ -119,9 +115,37 @@
 				</ul>
 		</section><!-- End Activities -->
 		
+		<div class="contact-wrapper">
+			<section id="contact">
+				<header>
+					<h1>To book your place with Travel Italia...</h1>
+				</header>
+					<form action="ajax/contact.php" method="post" class="ajax">
+						<div>
+							<input type="text" name="name" placeholder="Your Name">
+						</div>
+						<div>	
+							<input type="text" name="email" placeholder="Your Email">
+						</div>
+						<div>	
+							<textarea name="Message" placeholder="Your Message"></textarea>
+						</div>
+							<input type="Submit" name="send">
+					</form>
+			</section>
+		</div>
+
 		<footer>
-			
+			<section id="footer-info">
+				<small>Copyright, 2016 - All rights reserved</small>
+			</section>
 		</footer>
+
+		<div class="modal">
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
 
 		</body>
 	</html>
